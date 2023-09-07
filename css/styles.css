@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(/img/bg.svg);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#root {
+    margin: var(--spacing--default);
+    background-color: rgba(39, 55, 77, 0.9);
+    color: var(--default--color);
+    padding: var(--spacing--default);
+    font-size: var(--font--size--sm);
+    border-radius: 5px;
+}
+
+:root {
+    --font--size--lg: 4vw;
+    --font--size--md: 3vw;
+    --font--size--sm: 2vw;
+    --font--size--xs: 1.5vw;
+    --primary--color: #27374D;
+    --secondary--color: #9DB2BF;
+    --default--color: #DDE6ED;
+    --color--contrast: #E5D283;
+    --spacing--default: 5%;
+    --sp-bottom--default: 15px;
+}
+
+header {
+    margin-bottom: var(--spacing--default);
+    padding-bottom: var(--spacing--default);
+    border-bottom: 3px solid var(--secondary--color);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Coming Soon', cursive;
+    font-size: var(--font--size--lg);
+    font-weight: bold;
+    margin-bottom: var(--sp-bottom--default);
+    color: var(--color--contrast);
+}
+
+header>p {
+    font-size: var(--font--size--md);
+    opacity: 0.8;
+
+}
+
+form {
+    text-align: left;
+
+}
+
+form>fieldset>label {
+    margin-left: var(--spacing--default);
+}
+
+form fieldset legend {
+    margin-left: var(--spacing--default);
+}
+
+
+fieldset {
+    margin: var(--spacing--default);
+    border-bottom: 1px solid var(--secondary--color);
+    padding-bottom: var(--spacing--default);
+}
+
+fieldset:last-of-type {
+    border-bottom: 3px solid var(--secondary--color);
+    vertical-align: middle;
+}
+
+
+legend {
+    margin-bottom: var(--sp-bottom--default);
+    font-weight: 400;
+}
+
+select {
+    margin-left: var(--spacing--default);
+    height: 4.5vw;
+    color: var(--secondary--color);
+    width: 90%;
+    padding: 7px;
+    font-size: var(--font--size--xs);
+    border-radius: 5px;
+}
+
+option:checked {
+    background-color: var(--color--contrast);
+    color: var(--primary--color);
+}
+
+label {
+    display: block;
+}
+
+input {
+    border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: var(--font--size--xs);
+    color: var(--secondary--color);
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--color--contrast);
+    width: 2vw;
+    height: 2vw;
+}
+
+textarea {
+    margin-left: var(--spacing--default);
+    max-width: 500px;
+    min-width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px;
+    max-height: 9vw;
+    min-height:9vw;
+    height: 9vw;
+    font-size: var(--font--size--xs);
+    border-radius: 5px;
+}
+
+
+button {
+    padding: 3%;
+    border-radius: 5px;
+    background-color: var(--primary--color);
+    border-color: var(--secondary--color);
+    color: var(--color--contrast);
+    font-family: 'Coming Soon', cursive;
+    font-weight: bold;
+    font-size: var(--font--size--sm);
+}
+
+button:hover {
+    border-color: var(--secondary--color);
+    background-color: var(--color--contrast);
+    color: var(--primary--color);
+    transition: 0.5s;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#personal-info>label>input {
+    width: 95%;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: var(--sp-bottom--default);
+    height: 4.5vw;
+    padding: 7px;
+}
+
+#pet label {
+    display: inline;
+    font-weight: 300;
+}
+
+#pet input {
+    margin: 0 auto;
+}
+
+#pet-conditions label {
+    font-weight: 300;
+    margin-bottom: 7px;
+}
+
+#pet-conditions input {
+    margin: 7px auto;
+    vertical-align: middle;
+}

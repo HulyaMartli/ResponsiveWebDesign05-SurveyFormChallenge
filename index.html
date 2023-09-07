@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/png">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <title>Pet Survey Form</title>
+</head>
+
+<body>
+    <div id="root" class="limited-width">
+        <header>
+            <h1 id="title">Pet Survey Form</h1>
+            <p id="description" class="limited-width">Thank you for taking the time to improve our research about the
+                pets around the world.</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <fieldset name="personal-info" id="personal-info">
+                    <label for="name" id="name-label">Name:
+                        <input type="text" id="name" name="full-name" placeholder="Enter your full name" required>
+                    </label>
+
+                    <label for="email" id="email-label">Email:
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </label>
+
+                    <label for="number" id="number-label">Age (optional):
+                        <input type="number" name="age" id="number" min="13" max="120" placeholder="Your age">
+                    </label>
+                </fieldset>
+
+                <fieldset name="continet" id="continent">
+                    <legend> Which continent do you live in?</legend>
+                    <select name="continent" id="dropdown">
+                        <option value="">Select your continent</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="north-america">North America</option>
+                        <option value="south-america">South America</option>
+                        <option value="europe">Europe</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </fieldset>
+
+                <fieldset name="pet" id="pet">
+                    <legend>Which pet is your companion?</legend>
+                    <label for="dog">
+                        <input type="radio" name="pet" id="dog" value="dog">
+                        Dog
+                    </label>
+                    <label for="cat">
+                        <input type="radio" name="pet" id="cat" value="cat">
+                        Cat
+                    </label>
+                    <label for="both">
+                        <input type="radio" name="pet" id="both" value="both">
+                        Both
+                    </label>
+                </fieldset>
+
+                <fieldset name="pet-conditions" id="pet-conditions">
+                    <legend>Please select the options that best apply to you:</legend>
+                    <label for="microchip">
+                        <input type="checkbox" name="microchip" id="microchip" value="microchip">
+                        All my pets have a microchip implant.
+                    </label>
+                    <label for="ready-made">
+                        <input type="checkbox" name="food" id="ready-made" value="ready-made-food">
+                        I use ready-made food for my pet(s).
+                    </label>
+                    <label for="home-made">
+                        <input type="checkbox" name="food" id="home-made" value="home-made-food">
+                        I prepare home-made food for my pet(s).
+                    </label>
+                    <label for="vet">
+                        <input type="checkbox" name="vet" id="vet" value="vet">
+                        I take my pets to the vet regularly.
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>You can provide any additional information here:</legend>
+                    <textarea name="comments" id="comments" form="survey-form" placeholder="Any information you want to add..." maxlength="250"></textarea>
+                </fieldset>
+                <div class="button-container">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
